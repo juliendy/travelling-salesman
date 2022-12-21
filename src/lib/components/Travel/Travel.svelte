@@ -1,8 +1,8 @@
 <script>
-	import { Canvas, InteractiveObject, OrbitControls, T } from '@threlte/core'
-	import { spring } from 'svelte/motion'
-	import { degToRad } from 'three/src/math/MathUtils'
-	const scale = spring(1)
+	import { Canvas, OrbitControls, T } from '@threlte/core';
+	import { degToRad } from 'three/src/math/MathUtils';
+	import Cube from '$lib/components/Travel/models/Cube.svelte';
+	import Floor from '$lib/components/Travel/models/Floor.svelte';
 </script>
 
 <div>
@@ -13,28 +13,9 @@
 
 		<T.DirectionalLight castShadow position={[3, 10, 10]} />
 		<T.AmbientLight intensity={0.2} />
-
-		<!-- Cube -->
-		<T.Group scale={$scale}>
-			<T.Mesh position.y={0.5} castShadow let:ref>
-				<!-- Add interaction -->
-				<InteractiveObject
-					object={ref}
-					interactive
-					on:pointerenter={() => ($scale = 2)}
-					on:pointerleave={() => ($scale = 1)}
-				/>
-
-				<T.BoxGeometry />
-				<T.MeshStandardMaterial color="#333333" />
-			</T.Mesh>
-		</T.Group>
-
-		<!-- Floor -->
-		<T.Mesh receiveShadow rotation.x={degToRad(-90)}>
-			<T.PlaneGeometry args={[10, 10]} />
-			<T.MeshStandardMaterial color="white" />
-		</T.Mesh>
+		<!-- Geometry -->
+		<Floor />
+		<Cube />
 	</Canvas>
 </div>
 
@@ -42,6 +23,6 @@
 	div {
 		height: 100%;
 		width: 100%;
-        min-height: 500px;
+		min-height: 500px;
 	}
 </style>
