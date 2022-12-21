@@ -17,6 +17,8 @@
 	// utilities
 	import Helpers from './utils/Helpers.svelte';
 	import Background from '$lib/components/Travel/utils/Background.svelte';
+	import House from './models/House.svelte';
+	import Salesman from './models/Salesman.svelte';
 </script>
 
 <div>
@@ -28,6 +30,8 @@
 		<!-- Geometry -->
 		<Floor />
 		<Cube />
+		<House position={{ x: 8, y: 0, z: -4 }} />
+		<Salesman position={{ x: -8, y: 0, z: -4 }} />
 		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: 0 }} />
 		<TreeSquare variant="s1" position={{ x: -4, y: 0, z: 4 }} />
 		<TreeSquare variant="s2" position={{ x: 7, y: 0, z: 7 }} />
