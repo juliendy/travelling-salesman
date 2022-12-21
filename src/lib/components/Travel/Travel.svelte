@@ -1,6 +1,7 @@
 <script>
 	import { Canvas } from '@threlte/core';
-	import Persp from './cameras/Persp.svelte';
+	// import Persp from './cameras/Persp.svelte';
+	import Ortho from './cameras/Ortho.svelte';
 	import Cube from '$lib/components/Travel/models/Cube.svelte';
 	import Floor from '$lib/components/Travel/models/Floor.svelte';
 	import TreeSquare from '$lib/components/Travel/models/TreeSquare.svelte';
@@ -10,9 +11,9 @@
 </script>
 
 <div>
-	<Canvas rendererParameters={{ antialias: true}}>
+	<Canvas rendererParameters={{ antialias: true }}>
 		<!-- Cameras -->
-		<Persp />
+		<Ortho />
 		<!-- Lighting -->
 		<Lights />
 		<!-- Geometry -->
