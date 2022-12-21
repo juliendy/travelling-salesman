@@ -6,6 +6,7 @@
 	import Tree from '$lib/components/Travel/models/trees/TreeLarge.svelte';
 	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
 	import Helpers from './utils/Helpers.svelte';
+	import BushSquare from './models/BushSquare.svelte';
 </script>
 
 <div>
@@ -18,6 +19,9 @@
 		<Floor />
 		<Cube />
 		<Tree />
+		<BushSquare size="large" variant={0} position={{ x: 4, y: 0, z: 7 }} />
+		<BushSquare size="small" variant={0} position={{ x: 3, y: 0, z: 8 }} />
+		<BushSquare size="small" variant={1} position={{ x: 8, y: 0, z: 3 }} />x
 		<!-- Utils -->
 		<Helpers />
 	</Canvas>
