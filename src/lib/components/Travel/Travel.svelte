@@ -17,7 +17,6 @@
 	// utilities
 	import Helpers from './utils/Helpers.svelte';
 	import Background from '$lib/components/Travel/utils/Background.svelte';
-
 </script>
 
 <div>
@@ -37,7 +36,7 @@
 		<BushSquare variant="s2" position={{ x: 8, y: 0, z: 3 }} />y
 		<!-- Utils -->
 		<Helpers />
-		<Background color={'Mistyrose'} />
+		<Background color={'#50aee3'} />
 	</Canvas>
 </div>
 

@@ -6,5 +6,5 @@
 <!-- Floor -->
 <T.Mesh receiveShadow rotation.x={degToRad(-90)}>
 	<T.PlaneGeometry args={[100, 100]} />
-	<T.MeshStandardMaterial color="white" />
+	<T.MeshStandardMaterial color="#2d472e" />
 </T.Mesh>
