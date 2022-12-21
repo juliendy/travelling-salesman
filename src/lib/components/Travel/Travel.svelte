@@ -10,7 +10,7 @@
 </script>
 
 <div>
-	<Canvas>
+	<Canvas rendererParameters={{ antialias: true}}>
 		<!-- Cameras -->
 		<Persp />
 		<!-- Lighting -->
