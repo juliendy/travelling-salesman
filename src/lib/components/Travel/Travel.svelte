@@ -6,7 +6,7 @@
 	import Ortho from './cameras/Ortho.svelte';
 
 	// geometry
-	import Cube from '$lib/components/Travel/models/Cube.svelte';
+	import Cube from '$lib/components/Travel/utils/Cube.svelte';
 	import Floor from '$lib/components/Travel/utils/Floor.svelte';
 	import TreeSquare from '$lib/components/Travel/models/TreeSquare.svelte';
 	import BushSquare from './models/BushSquare.svelte';
