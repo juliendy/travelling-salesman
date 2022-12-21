@@ -3,6 +3,7 @@
 	import Persp from './cameras/Persp.svelte';
 	import Cube from '$lib/components/Travel/models/Cube.svelte';
 	import Floor from '$lib/components/Travel/models/Floor.svelte';
+	import Tree from '$lib/components/Travel/models/trees/TreeLarge.svelte';
 	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
 	import Helpers from './utils/Helpers.svelte';
 </script>
@@ -16,6 +17,7 @@
 		<!-- Geometry -->
 		<Floor />
 		<Cube />
+		<Tree />
 		<!-- Utils -->
 		<Helpers />
 	</Canvas>
