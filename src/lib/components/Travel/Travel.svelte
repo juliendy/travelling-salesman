@@ -1,20 +1,23 @@
 <script>
-	import { Canvas, OrbitControls, T } from '@threlte/core';
+	import { Canvas } from '@threlte/core';
 	import Persp from './cameras/Persp.svelte';
 	import Cube from '$lib/components/Travel/models/Cube.svelte';
 	import Floor from '$lib/components/Travel/models/Floor.svelte';
+	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
+	import Helpers from './utils/Helpers.svelte';
 </script>
 
 <div>
 	<Canvas>
 		<!-- Cameras -->
 		<Persp />
-
-		<T.DirectionalLight castShadow position={[3, 10, 10]} />
-		<T.AmbientLight intensity={0.2} />
+		<!-- Lighting -->
+		<Lights />
 		<!-- Geometry -->
 		<Floor />
 		<Cube />
+		<!-- Utils -->
+		<Helpers />
 	</Canvas>
 </div>
 
