@@ -3,8 +3,10 @@
 	import { degToRad } from 'three/src/math/MathUtils';
 	const ortho = {
 		makeDefault: true,
-		position: [10, 10, 10],
+		position: [100, 100, 100],
 		zoom: 20
+		// near: 0.1
+		// far: 100000
 	};
 	const orbit = {
 		maxPolarAngle: degToRad(80),
