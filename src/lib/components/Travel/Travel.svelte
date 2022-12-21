@@ -18,12 +18,12 @@
 		<!-- Geometry -->
 		<Floor />
 		<Cube />
-		<TreeSquare variant={0} position={{ x: 2, y: 0, z: 0 }} />
-		<TreeSquare variant={1} position={{ x: -4, y: 0, z: 4 }} />
-		<TreeSquare variant={2} position={{ x: 7, y: 0, z: 7 }} />
-		<BushSquare size="large" variant={0} position={{ x: 4, y: 0, z: 7 }} />
-		<BushSquare size="small" variant={0} position={{ x: 3, y: 0, z: 8 }} />
-		<BushSquare size="small" variant={1} position={{ x: 8, y: 0, z: 3 }} />x
+		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: 0 }} />
+		<TreeSquare variant="s1" position={{ x: -4, y: 0, z: 4 }} />
+		<TreeSquare variant="s2" position={{ x: 7, y: 0, z: 7 }} />
+		<BushSquare variant="l1" position={{ x: 4, y: 0, z: 7 }} />
+		<BushSquare variant="s1" position={{ x: 3, y: 0, z: 8 }} />
+		<BushSquare variant="s2" position={{ x: 8, y: 0, z: 3 }} />y
 		<!-- Utils -->
 		<Helpers />
 	</Canvas>
