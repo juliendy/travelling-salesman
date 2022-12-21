@@ -1,13 +1,23 @@
 <script>
 	import { Canvas } from '@threlte/core';
+
+	//camera
 	// import Persp from './cameras/Persp.svelte';
 	import Ortho from './cameras/Ortho.svelte';
+
+	// geometry
 	import Cube from '$lib/components/Travel/models/Cube.svelte';
 	import Floor from '$lib/components/Travel/models/Floor.svelte';
 	import TreeSquare from '$lib/components/Travel/models/TreeSquare.svelte';
-	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
-	import Helpers from './utils/Helpers.svelte';
 	import BushSquare from './models/BushSquare.svelte';
+
+	// lighting
+	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
+
+	// utilities
+	import Helpers from './utils/Helpers.svelte';
+	import Background from '$lib/components/Travel/utils/Background.svelte';
+
 </script>
 
 <div>
@@ -27,6 +37,7 @@
 		<BushSquare variant="s2" position={{ x: 8, y: 0, z: 3 }} />y
 		<!-- Utils -->
 		<Helpers />
+		<Background color={'Mistyrose'} />
 	</Canvas>
 </div>
 
