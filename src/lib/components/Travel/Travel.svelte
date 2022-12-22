@@ -19,6 +19,7 @@
 	import Background from '$lib/components/Travel/utils/Background.svelte';
 	import House from './models/House.svelte';
 	import Salesman from './models/Salesman.svelte';
+	import Street from './models/Street.svelte';
 </script>
 
 <div>
@@ -37,7 +38,8 @@
 		<TreeSquare variant="s2" position={{ x: 7, y: 0, z: -9 }} />
 		<BushSquare variant="l1" position={{ x: 4, y: 0, z: 7 }} />
 		<BushSquare variant="s1" position={{ x: 3, y: 0, z: -4 }} />
-		<BushSquare variant="s2" position={{ x: 8, y: 0, z: -4 }} />y
+		<BushSquare variant="s2" position={{ x: 8, y: 0, z: -4 }} />
+		<Street />
 		<!-- Utils -->
 		<Helpers />
 		<Background color={'#50aee3'} />
