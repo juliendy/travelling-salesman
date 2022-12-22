@@ -1,47 +1,22 @@
 <script>
-	import Nav from '$lib/components/UI/Nav.svelte'
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
+	import Nav from '$lib/components/UI/Nav.svelte';
+	import iconBurger from '$lib/images/icons/icon-burger.svg';
+
+	let showMenu = false;
+	const handleClick = () => (showMenu = !showMenu);
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-
-	<Nav />
-
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
-		</a>
-	</div>
+	<button on:click={handleClick}><img src={iconBurger} alt="Burger" /></button>
+	<Nav {showMenu} />
 </header>
 
 <style>
 	header {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 	}
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-	a:hover {
-		color: var(--color-theme-1);
+	button {
+		all: unset
 	}
 </style>

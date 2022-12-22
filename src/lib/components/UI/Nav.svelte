@@ -1,19 +1,44 @@
 <script>
 	import { page } from '$app/stores';
+	export let showMenu = false;
 </script>
 
-<nav>
-    <ul>
-        <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-            <a href="/">Home</a>
-        </li>
-        <li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-            <a href="/about">About</a>
-        </li>
-    </ul>
-</nav>
+<div class="nav-wrapper" class:showMenu>
+	<div>
+		<!-- instagram and twitter -->
+		<!-- cross button -->
+	</div>
+	<nav>
+		<h1>The Travelling Salesman</h1>
+		<ul>
+			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<a href="/">Home</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="https://github.com">Github</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- created by -->
+	<section>
+		<h1>Created by:</h1>
+		<ul>
+			<li>juliendy</li>
+			<li>2022</li>
+		</ul>
+	</section>
+</div>
 
 <style>
+	.nav-wrapper {
+		display: none;
+	}
+	.showMenu {
+		display: block;
+	}
 	nav {
 		display: flex;
 		justify-content: center;
