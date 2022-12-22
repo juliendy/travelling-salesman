@@ -13,9 +13,9 @@
 		<h2>A Svelte, SvelteKit and Threlte (Threejs) demo project</h2>
 	</section>
 
-	<article>
+	<div class="canvas-wrapper">
 		<Travel />
-	</article>
+	</div>
 </div>
 
 <style>
@@ -32,13 +32,12 @@
 		position: relative;
 	}
 
-	article {
+	.canvas-wrapper {
 		position: fixed;
 		height: 100vh;
 		width: 100vw;
 		top: 0;
 		left: 0;
-		z-index: -1;
 	}
 
 	h1 {

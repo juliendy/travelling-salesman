@@ -15,6 +15,7 @@
 	header {
 		display: flex;
 		justify-content: flex-end;
+		z-index: 100;
 	}
 	button {
 		all: unset
