@@ -42,7 +42,7 @@
 		<Street />
 		<!-- Utils -->
 		<Helpers />
-		<Background color={'#50aee3'} />
+		<Background color={'#739368'} />
 	</Canvas>
 </div>
 
