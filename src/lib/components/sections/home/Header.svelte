@@ -1,28 +1,20 @@
 <script>
+	import Section from '$lib/components/sections/home/Section.svelte';
+	
 	import Button from '$lib/components/UI/Button.svelte';
 	import iconMouse from '$lib/images/icons/icon-mouse.svg';
 </script>
 
-<section>
+<Section>
 	<h1>The Travelling Salesman</h1>
 	<h2>
 		A fun little GFX project created with Svelte/SvelteKit, plus the Threlte/Three.js WebGL
 		libraries.
 	</h2>
 	<Button label="Scroll down" icon={iconMouse} />
-</section>
+</Section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		gap: 2rem;
-		z-index: 100;
-		padding: var(--container-margin);
-		/* pointer-events: none; */
-	}
 	h1,
 	h2 {
 		color: white;

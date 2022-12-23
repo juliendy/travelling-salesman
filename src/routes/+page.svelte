@@ -1,6 +1,9 @@
 <script>
 	import Travel from '$lib/components/Travel/Travel.svelte';
+
 	import Header from '$lib/components/sections/home/Header.svelte';
+	import House from '$lib/components/sections/home/House.svelte';
+
 </script>
 
 <svelte:head>
@@ -13,6 +16,7 @@
 
 <div class="page-wrapper">
 	<Header />
+		<House houseId={1} description="Seems like and old lady lives here. What will you try to sell?" />
 	<div class="canvas-wrapper">
 		<Travel />
 	</div>
@@ -22,6 +26,7 @@
 	.page-wrapper {
 		position: relative;
 		display: flex;
+		flex-direction: column;
 	}
 
 	.canvas-wrapper {
