@@ -1,17 +1,20 @@
-# Travelling Salesman
+# travelling salesman
 
-A Svelte, SvelteKit and Threlte (Three.js) demo project.
+a svelte, svelteKit and threlte (three.js) demo project.
 
 URL: coming soon...
 
-## todos Journey
+## to-do
 
-- [ ] refactor header into component
+### done
+- [x] refactor header into component
+
+### in progress
 - [ ] update meta data + cleanup
 - [ ] refactor <section>s into section components
 - [ ] incorporate/work with tweened from svelte/motion (read doc: https://svelte.dev/tutorial/tweened)
 
-## Setup project
+## setup project
 
 ```bash
 # install node_modules
@@ -23,4 +26,4 @@ npm run dev
 npm run build
 ```
 
-> Make sure the correct [adapter](https://kit.svelte.dev/docs/adapters) is set up! (Netlify/Vercel/etc)
+> make sure the correct [adapter](https://kit.svelte.dev/docs/adapters) is set up! (Netlify/Vercel/etc)
