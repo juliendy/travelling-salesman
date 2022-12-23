@@ -19,7 +19,7 @@
 		top: 0;
 		right: 0;
 		display: flex;
-		width: calc(100vw - 3rem);
+		width: calc(100% - 2rem);
 		justify-content: space-between;
 		align-items: center;
 		z-index: 999;
