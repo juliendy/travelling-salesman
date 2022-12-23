@@ -1,5 +1,6 @@
 <script>
 	import Nav from '$lib/components/UI/Nav.svelte';
+	import Score from '$lib/components/UI/Score.svelte'
 	import iconBurger from '$lib/images/icons/icon-burger.svg';
 
 	let showMenu = false;
@@ -7,6 +8,7 @@
 </script>
 
 <header>
+	<Score />
 	<button on:click={handleClick}><img src={iconBurger} alt="Burger" /></button>
 	<Nav {showMenu} on:click={handleClick} />
 </header>
@@ -17,9 +19,12 @@
 		top: 0;
 		right: 0;
 		display: flex;
-		justify-content: flex-end;
+		width: calc(100vw - 3rem);
+		justify-content: space-between;
+		align-items: center;
 		z-index: 999;
 		padding: 1rem;
+		background-color: #739368dd;
 	}
 	button {
 		all: unset
