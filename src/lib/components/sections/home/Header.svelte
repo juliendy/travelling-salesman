@@ -18,9 +18,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
-		/* flex: 1; */
 		gap: 2rem;
-		/* position: absolute; */
 		z-index: 100;
 		padding: var(--container-margin);
 		/* pointer-events: none; */
