@@ -4,8 +4,11 @@
 </script>
 
 <svelte:head>
-	<title>Travelling Salesman</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>The Travelling Salesman</title>
+	<meta
+		name="description"
+		content="A fun little GFX project created with Svelte/SvelteKit, plus the Threlte/Three.js WebGL libraries."
+	/>
 </svelte:head>
 
 <div class="page-wrapper">
