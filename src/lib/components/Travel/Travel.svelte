@@ -35,10 +35,13 @@
 		<!-- Geometry -->
 		<!-- <Floor /> -->
 		<Cube />
+		<House position={{ x: -8, y: 0, z: -6 }} />
 		<House position={{ x: 8, y: 0, z: -6 }} />
+		<House position={{ x: 16, y: 0, z: -6 }} />
 		<T.Group position.x={$positionSalesman}>
 			<Salesman />
-		</T.Group>		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: -7 }} />
+		</T.Group>
+		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: -7 }} />
 		<TreeSquare variant="s1" position={{ x: -4, y: 0, z: -4 }} />
 		<TreeSquare variant="s2" position={{ x: 7, y: 0, z: -9 }} />
 		<BushSquare variant="l1" position={{ x: 4, y: 0, z: 7 }} />

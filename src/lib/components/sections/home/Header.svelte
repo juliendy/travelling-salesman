@@ -11,7 +11,7 @@
 		A fun little GFX project created with Svelte/SvelteKit, plus the Threlte/Three.js WebGL
 		libraries.
 	</h2>
-	<Button label="Scroll down" icon={iconMouse} />
+	<Button label="Start the game" on:click icon={iconMouse} />
 </Section>
 
 <style>
