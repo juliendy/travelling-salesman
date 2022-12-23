@@ -1,13 +1,23 @@
 <script>
 	import { page } from '$app/stores';
+
+	import iconCross from '$lib/images/icons/icon-menu-cross.svg';
+	import iconTwitter from '$lib/images/icons/icon-twitter.svg';
+	import iconInstagram from '$lib/images/icons/icon-instagram.svg';
+
 	export let showMenu = false;
 </script>
 
 <div class="nav-wrapper" class:showMenu>
-	<div>
-		<!-- instagram and twitter -->
-		<!-- cross button -->
-	</div>
+	<section class="buttons">
+		<div class="social-links">
+			<img src={iconTwitter} alt="Twitter" />
+			<img src={iconInstagram} alt="Instagram" />
+		</div>
+		<button on:click>
+			<img src={iconCross} alt="Cross" />
+		</button>
+	</section>
 	<nav>
 		<h1>The Travelling Salesman</h1>
 		<ul>
@@ -34,57 +44,72 @@
 
 <style>
 	.nav-wrapper {
-		display: none;
+		position: absolute;
+		top: -30rem;
+		right: -1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		padding: 2rem;
+		width: calc(100vw - 4rem);
+		background-color: white;
+		transition: top 200ms ease-in-out;
 	}
 	.showMenu {
-		display: block;
+		top: -1rem;
 	}
+
+	/* social media and close button */
+	.buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.social-links {
+		display: inline-flex;
+		gap: 0.5rem;
+	}
+	.social-links > img {
+		height: 1.25rem;
+	}
+	button {
+		all: unset;
+	}
+
+	/* nav */
 	nav {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
+		/* --background: rgba(255, 255, 255, 0.7); */
+	}
+
+	h1 {
+		font-size: 1rem;
+		text-align: left;
+		font-weight: 700;
 	}
 	ul {
-		position: relative;
 		padding: 0;
 		margin: 0;
-		height: 3em;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		flex-direction: column;
+		gap: 0.5rem;
 		list-style: none;
-		background: var(--background);
-		background-size: contain;
 	}
 	li {
 		position: relative;
 		height: 100%;
 	}
-	li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
+
+	a {
+		color: black;
 	}
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-	a:hover {
-		color: var(--color-theme-1);
+
+	@media only screen and (min-width: 400px) {
+		.nav-wrapper {
+			width: 15rem;
+		}
 	}
 </style>
