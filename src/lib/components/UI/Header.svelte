@@ -9,6 +9,7 @@
 
 <header>
 	<Score />
+	<h2><strong>Under Construction</strong></h2>
 	<button on:click={handleClick}><img src={iconBurger} alt="Burger" /></button>
 	<Nav {showMenu} on:click={handleClick} />
 </header>
