@@ -1,5 +1,6 @@
 <script>
 	import Section from '$lib/components/sections/home/Section.svelte';
+	import AnswerButton from '$lib/components/UI/AnswerButton.svelte';
 
 	import { positionSalesman } from '$lib/stores/store';
 
@@ -17,8 +18,10 @@
 <Section>
 	<h1>House {houseId}</h1>
 	<h2>{description}</h2>
-	<button on:click={clickHandler}>BACK</button>
-	<button on:click={clickHandlerBack}>FORTH</button>
+	<div>
+		<AnswerButton on:click={clickHandler} label="Woolen socks" emoji="🧦" />
+		<AnswerButton on:click={clickHandlerBack} label="Toilet paper" emoji="🧻" />
+	</div>
 </Section>
 
 <style>
@@ -33,5 +36,10 @@
 	h1 {
 		font-family: var(--font-serif);
 		width: 100%;
+	}
+
+	div {
+		display: inline-flex;
+		gap: 0.5rem;
 	}
 </style>
