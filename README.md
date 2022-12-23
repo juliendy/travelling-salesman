@@ -8,12 +8,12 @@ URL: coming soon...
 
 ### done
 - [x] refactor header into component
+- [x] update meta data + cleanup
+- [x] refactor sections into section components
+- [x] incorporate/work with tweened from svelte/motion (read doc: https://svelte.dev/tutorial/tweened)
+- [x] menu items + finish nav bar
 
 ### in progress
-- [ ] update meta data + cleanup
-- [ ] refactor sections into section components
-- [ ] incorporate/work with tweened from svelte/motion (read doc: https://svelte.dev/tutorial/tweened)
-- [ ] menu items + finish nav bar
 - [ ] work on logic for scoring system(?)
 - [ ] use svelte stores to store state (https://svelte.dev/tutorial/writable-stores)
 - [ ] dynamically display components based on state
