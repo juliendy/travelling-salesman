@@ -3,7 +3,7 @@
 	export let icon = '';
 </script>
 
-<button>
+<button on:click>
 	<span>
 		{label}
 	</span>

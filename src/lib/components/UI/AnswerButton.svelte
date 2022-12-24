@@ -1,15 +1,12 @@
 <script>
 	export let label = '';
 	export let emoji = '';
+	export let id = 0;
 </script>
 
-<button on:click>
-	<span>
-		{label}
-	</span>
-	<span>
-		{emoji}
-	</span>
+<button on:click data-id={id}>
+	{label}
+	{emoji}
 </button>
 
 <style>
