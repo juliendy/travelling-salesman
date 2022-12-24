@@ -3,6 +3,12 @@
 
 	import Header from '$lib/components/sections/home/Header.svelte';
 	import House from '$lib/components/sections/home/House.svelte';
+	import Finish from '$lib/components/sections/home/Finish.svelte';3
+
+	// stores
+	import { positionSalesman, sales } from '$lib/stores/store';
+	import { start, finish } from '$lib/stores/store';
+	import { houses, currentHouse } from '$lib/stores/store';
 
 </script>
 
@@ -16,7 +22,7 @@
 
 <div class="page-wrapper">
 	<Header />
-		<House houseId={1} description="Seems like and old lady lives here. What will you try to sell?" />
+	<House houseId={1} description="Seems like and old lady lives here. What will you try to sell?" />
 	<div class="canvas-wrapper">
 		<Travel />
 	</div>
