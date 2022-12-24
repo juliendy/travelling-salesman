@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
+// import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-netlify';
 
 // Threlte
 import preprocess from 'svelte-preprocess'
@@ -8,7 +9,17 @@ import { preprocessThrelte } from '@threlte/preprocess'
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			// NETLIFY ADAPTER
+			// if true, will create a Netlify Edge Function rather
+			// than using standard Node-based functions
+			edge: false,
+
+			// if true, will split your app into multiple functions
+			// instead of creating a single one for the entire app.
+			// if `edge` is true, this option cannot be used
+			split: false
+		})
 	},
 	preprocess: seqPreprocessor([preprocess(), preprocessThrelte()])
 };
