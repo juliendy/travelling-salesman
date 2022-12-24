@@ -12,13 +12,22 @@ URL: coming soon...
 - [x] refactor sections into section components
 - [x] incorporate/work with tweened from svelte/motion (read doc: https://svelte.dev/tutorial/tweened)
 - [x] menu items + finish nav bar
+- [x] dynamically display components based on state
+- [x] brainstorm game state logic
+- [x] finish game state logic
+- [x] work on logic for scoring system(?)
+- [x] use svelte stores to store state (https://svelte.dev/tutorial/writable-stores)
+- [x] add new camera poistion props to store later
 
 ### in progress
-- [ ] work on logic for scoring system(?)
-- [ ] use svelte stores to store state (https://svelte.dev/tutorial/writable-stores)
-- [ ] dynamically display components based on state
-- [ ] add new camera poistion props to store later
-- [ ] brainstorm game state logic
+- [ ] fix styling issues
+- [ ] add camera pos props and store
+- [ ] zooming capabilities
+- [ ] animation to camera target
+- [ ] add links to my socials
+- [ ] update models and add new ones
+- [ ] rethink geo
+- [ ] netlify adapter/package and config for deploying
 
 ## setup project
 
