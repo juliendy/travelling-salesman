@@ -2,7 +2,7 @@
 
 a svelte, svelteKit and threlte (three.js) demo project.
 
-URL: coming soon...
+URL: [Traveling Salesman](https://travelling-salesman.netlify.app/)
 
 ## to-do
 
