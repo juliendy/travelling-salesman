@@ -6,6 +6,9 @@
 
 	let showMenu = false;
 	const handleClick = () => (showMenu = !showMenu);
+
+	// import stores
+	import { start, sales, positionSalesman, currentHouse, finish } from '$lib/stores/store';
 </script>
 
 <header>
