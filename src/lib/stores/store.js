@@ -14,10 +14,10 @@ export const currentHouse = writable(0);
 export const houses = readable([
 	{
 		id: '01',
-		question: `Seems like and old lady lives here. What will you try to sell?`,
+		question: `It seems like and old lady lives here. What will you try to sell?`,
 		answers: [
 			{ answer: 'Woolen socks', icon: '🧦', amount: 2 },
-			{ answer: 'Toilet papaer', icon: '🧻', amount: 10 }
+			{ answer: 'Toilet paper', icon: '🧻', amount: 10 }
 		],
 		salesManPosition: -8,
 		cameraPosition: -8
@@ -41,5 +41,15 @@ export const houses = readable([
 		],
 		salesManPosition: 16,
 		cameraPosition: 16
+	},
+	{
+		id: '04',
+		question: `Ohh what a noise!! A fan of heavy metal music lives here. What will you sell?`,
+		answers: [
+			{ answer: 'Marijuana', icon: '🌿', amount: 12 },
+			{ answer: 'Playboy magazines', icon: '🍆', amount: 18 }
+		],
+		salesManPosition: 32,
+		cameraPosition: 32
 	}
 ]);

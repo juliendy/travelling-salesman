@@ -11,8 +11,16 @@
 <div class="nav-wrapper" class:showMenu>
 	<section class="buttons">
 		<div class="social-links">
-			<img src={iconTwitter} alt="Twitter" />
-			<img src={iconInstagram} alt="Instagram" />
+			<a href="https://twitter.com/pratertell" target="_blank" rel="noreferrer noopener">
+				<img src={iconTwitter} alt="Twitter" />
+			</a>
+			<a
+				href="https://www.instagram.com/pratertell/"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				<img src={iconInstagram} alt="Instagram" />
+			</a>
 		</div>
 		<button on:click>
 			<img src={iconCross} alt="Cross" />

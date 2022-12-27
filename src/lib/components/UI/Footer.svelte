@@ -4,8 +4,16 @@
 </script>
 
 <footer>
-	<img src={iconTwitter} alt="Twitter" />
-	<img src={iconInstagram} alt="Instagram" />
+	<a href="https://twitter.com/eggsandbread" target="_blank" rel="noreferrer noopener">
+		<img src={iconTwitter} alt="Twitter" />
+	</a>
+	<a
+		href="https://www.instagram.com/pratertell/"
+		target="_blank"
+		rel="noreferrer noopener"
+	>
+		<img src={iconInstagram} alt="Instagram" />
+	</a>
 </footer>
 
 <style>
