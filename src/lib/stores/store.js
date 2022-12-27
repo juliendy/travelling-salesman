@@ -3,7 +3,8 @@ import { tweened } from 'svelte/motion';
 import { writable, readable } from 'svelte/store';
 
 // animation positions
-export const positionSalesman = tweened(-14, { duration: 2000, easing: cubicInOut });
+export const positionSalesman = tweened(-14, { duration: 2000, easing: cubicInOut })
+export const targetCamera = tweened(0, { duration: 1000, easing: cubicInOut });
 
 // game state
 export const start = writable(false);
@@ -18,7 +19,8 @@ export const houses = readable([
 			{ answer: 'Woolen socks', icon: '🧦', amount: 2 },
 			{ answer: 'Toilet papaer', icon: '🧻', amount: 10 }
 		],
-		salesManPosition: -8
+		salesManPosition: -8,
+		cameraPosition: -8
 	},
 	{
 		id: '02',
@@ -27,7 +29,8 @@ export const houses = readable([
 			{ answer: 'Bibles', icon: '📚', amount: 15 },
 			{ answer: 'Insurance', icon: '📜', amount: 30 }
 		],
-		salesManPosition: 8
+		salesManPosition: 8,
+		cameraPosition: 8
 	},
 	{
 		id: '03',
@@ -36,6 +39,7 @@ export const houses = readable([
 			{ answer: 'Chuck Norris', icon: '🧔🏽', amount: 8 },
 			{ answer: 'Batman', icon: '🦇', amount: 5 }
 		],
-		salesManPosition: 16
+		salesManPosition: 16,
+		cameraPosition: 16
 	}
 ]);

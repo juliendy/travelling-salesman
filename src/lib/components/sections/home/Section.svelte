@@ -10,7 +10,7 @@
 		align-items: flex-start;
 		gap: 2rem;
 		z-index: 100;
-		height: 100vh;
+		height: calc(100vh - 2rem);
 		padding: var(--container-margin);
 		/* pointer-events: none; */
 	}
