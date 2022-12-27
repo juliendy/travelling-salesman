@@ -8,7 +8,14 @@
 	const handleClick = () => (showMenu = !showMenu);
 
 	// import stores
-	import { start, sales, positionSalesman, currentHouse, finish } from '$lib/stores/store';
+	import {
+		start,
+		sales,
+		positionSalesman,
+		currentHouse,
+		finish,
+		targetCamera
+	} from '$lib/stores/store';
 
 	const restartHandle = () => {
 		start.set(false);
@@ -16,6 +23,7 @@
 		sales.set(0);
 		positionSalesman.set(-14);
 		currentHouse.set(0);
+		targetCamera.set(0);
 	};
 </script>
 

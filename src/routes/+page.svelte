@@ -7,9 +7,9 @@
 	3;
 
 	// stores
-	import { positionSalesman, sales } from '$lib/stores/store';
+	import { positionSalesman, targetCamera } from '$lib/stores/store';
 	import { start, finish } from '$lib/stores/store';
-	import { houses, currentHouse } from '$lib/stores/store';
+	import { houses, currentHouse, sales } from '$lib/stores/store';
 
 	const nextHouse = (e) => {
 		// update sales
@@ -19,14 +19,18 @@
 		if ($currentHouse < $houses.length - 1) {
 			currentHouse.update((v) => v + 1);
 			positionSalesman.set($houses[$currentHouse].salesManPosition);
+			targetCamera.set($houses[$currentHouse].cameraPosition);
 		} else if ($currentHouse === $houses.length - 1) {
 			positionSalesman.set(0);
+			targetCamera.set(0);
 			finish.set(true);
 		}
 	};
 	const startHandler = () => {
 		positionSalesman.set($houses[$currentHouse].salesManPosition);
+		targetCamera.set($houses[$currentHouse].cameraPosition);
 		start.set(true);
+		camY.set(30)
 	};
 </script>
 

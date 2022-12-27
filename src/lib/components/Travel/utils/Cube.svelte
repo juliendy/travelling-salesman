@@ -6,7 +6,7 @@
 
 <!-- Cube -->
 <T.Group scale={$scale}>
-	<T.Mesh position.y={0.5} castShadow let:ref>
+	<T.Mesh position.y={0.5} position.x={-3} position.z={5} castShadow let:ref>
 		<!-- Add interaction -->
 		<InteractiveObject
 			object={ref}
