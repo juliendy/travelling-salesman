@@ -5,9 +5,7 @@ a svelte, svelteKit and threlte (three.js) demo project.
 URL: [Traveling Salesman](https://travelling-salesman.netlify.app/)
 
 ## preview
-
-## to-do
-
+![Travelling-Salesman](https://i.imgur.com/LEyGnzQ.png)
 ### finished
 - [x] refactor header into component
 - [x] update meta data + cleanup
