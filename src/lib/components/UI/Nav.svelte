@@ -36,7 +36,7 @@
 				<a href="/about">About</a>
 			</li>
 			<li>
-				<a href="https://github.com">Github</a>
+				<a href="https://github.com/juliendy">Github</a>
 			</li>
 		</ul>
 	</nav>
