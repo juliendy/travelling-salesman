@@ -1,5 +1,5 @@
 <script>
-	import Travel from '$lib/components/Travel/Travel.svelte';
+	import Canvas from '$lib/components/Canvas/Canvas.svelte';
 
 	import Header from '$lib/components/sections/home/Header.svelte';
 	import House from '$lib/components/sections/home/House.svelte';
@@ -56,7 +56,7 @@
 		/>
 	{/if}
 	<div class="canvas-wrapper">
-		<Travel />
+		<Canvas />
 	</div>
 </div>
 

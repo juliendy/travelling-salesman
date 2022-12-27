@@ -7,6 +7,7 @@
 	const gltf = {
 		url: url,
 		scale: scale,
+		rotation: {x: 0, y: Math.PI/2, z: 0},
 		position: position,
 		castShadow: true
 	};

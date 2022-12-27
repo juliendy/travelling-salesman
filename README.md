@@ -20,16 +20,22 @@ URL: [Traveling Salesman](https://travelling-salesman.netlify.app/)
 - [x] work on logic for scoring system(?)
 - [x] use svelte stores to store state (https://svelte.dev/tutorial/writable-stores)
 - [x] add new camera poistion props to store later
+- [x] fix styling issues
+- [x] add camera pos props and store
+- [x] zooming capabilities
+- [x] animation to camera target
+- [x] add links to my socials
+- [x] update models and add new ones
+- [x] rethink geo
+- [x] netlify adapter/package and config for deploying
 
 ### in progress
-- [ ] fix styling issues
-- [ ] add camera pos props and store
-- [ ] zooming capabilities
-- [ ] animation to camera target
-- [ ] add links to my socials
-- [ ] update models and add new ones
-- [ ] rethink geo
-- [ ] netlify adapter/package and config for deploying
+- [ ] Optimize performance for older iPhones (6/7)
+    - instancing of geometry?
+- [ ] Fix directional lighting shadows
+    - https://github.com/threlte/threlte/issues/201
+    - frustrum size?
+    - shadow-camera?
 
 ## setup project
 

@@ -4,6 +4,7 @@ import { writable, readable } from 'svelte/store';
 
 // animation positions
 export const positionSalesman = tweened(-14, { duration: 2000, easing: cubicInOut })
+export const positionCar = tweened(30, { duration: 12e3, easing: cubicInOut });
 export const targetCamera = tweened(0, { duration: 1000, easing: cubicInOut });
 
 // game state

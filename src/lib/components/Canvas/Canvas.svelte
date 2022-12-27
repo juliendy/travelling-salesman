@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	import { Canvas, T } from '@threlte/core';
 
 	//camera
@@ -6,30 +7,35 @@
 	import Ortho from './cameras/Ortho.svelte';
 
 	// geometry
-	import Cube from '$lib/components/Travel/utils/Cube.svelte';
-	import TreeSquare from '$lib/components/Travel/models/TreeSquare.svelte';
+	import Cube from '$lib/components/Canvas/utils/Cube.svelte';
+	import TreeSquare from '$lib/components/Canvas/models/TreeSquare.svelte';
 	import BushSquare from './models/BushSquare.svelte';
 	import House from './models/House.svelte';
 	import Salesman from './models/Salesman.svelte';
 	import Street from './models/Street.svelte';
+	import Car from './models/Car.svelte';
 
 	// lighting
-	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
+	import Lights from '$lib/components/Canvas/lighting/Lights.svelte';
 
 	// utilities
 	// import Helpers from './utils/Helpers.svelte';
-	import Background from '$lib/components/Travel/utils/Background.svelte';
+	import Background from '$lib/components/Canvas/utils/Background.svelte';
+	import ShadowPlane from './utils/ShadowPlane.svelte';
 
 	// tweened stores
 	import { positionSalesman } from '$lib/stores/store';
-	import ShadowPlane from './utils/ShadowPlane.svelte';
+	import { positionCar } from '$lib/stores/store';
+	onMount(() => {
+		positionCar.set(-50);
+	});
 </script>
 
 <div>
 	<Canvas rendererParameters={{ antialias: true }}>
 		<!-- Cameras -->
 		<Ortho />
-		
+
 		<!-- Lighting -->
 		<Lights />
 
@@ -43,6 +49,10 @@
 
 		<T.Group position.x={$positionSalesman}>
 			<Salesman />
+		</T.Group>
+
+		<T.Group position.x={$positionCar}>
+			<Car />
 		</T.Group>
 
 		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: -7 }} />
