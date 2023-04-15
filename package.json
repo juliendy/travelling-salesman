@@ -17,7 +17,7 @@
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^1.0.0",
 		"@sveltejs/adapter-netlify": "^1.0.0",
-		"@sveltejs/kit": "^1.0.0",
+		"@sveltejs/kit": "^1.15.4",
 		"@threlte/core": "^5.0.5",
 		"@threlte/extras": "^4.8.0",
 		"@threlte/preprocess": "^0.0.2",
