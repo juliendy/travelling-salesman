@@ -28,9 +28,9 @@ URL: [Traveling Salesman](https://travelling-salesman.netlify.app/)
 - [x] netlify adapter/package and config for deploying
 
 ### in progress
-- [ ] Optimize performance for older iPhones (6/7)
+- [ ] optimize performance for older iPhones (6/7)
     - instancing of geometry?
-- [ ] Fix directional lighting shadows
+- [ ] fix directional light shadow problem (resize scene)
     - https://github.com/threlte/threlte/issues/201
     - frustrum size?
     - shadow-camera?
