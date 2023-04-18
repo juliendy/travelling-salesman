@@ -26,14 +26,12 @@ URL: [Traveling Salesman](https://travelling-salesman.netlify.app/)
 - [x] update models and add new ones
 - [x] rethink geo
 - [x] netlify adapter/package and config for deploying
+- [X] fix directional lighting shadows [Issue](https://github.com/threlte/threlte/issues/201)
+    - issue related to frustrum size / shadow-camera / scene-size
 
 ### in progress
 - [ ] optimize performance for older iPhones (6/7)
     - instancing of geometry?
-- [ ] fix directional light shadow problem (resize scene)
-    - https://github.com/threlte/threlte/issues/201
-    - frustrum size?
-    - shadow-camera?
 
 ## setup project
 
