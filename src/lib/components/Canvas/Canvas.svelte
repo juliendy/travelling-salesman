@@ -26,6 +26,7 @@
 	// tweened stores
 	import { positionSalesman } from '$lib/stores/store';
 	import { positionCar } from '$lib/stores/store';
+
 	onMount(() => {
 		positionCar.set(-50);
 	});
@@ -35,40 +36,43 @@
 	<Canvas rendererParameters={{ antialias: true }}>
 		<!-- Cameras -->
 		<Ortho />
+		<!-- <Persp /> -->
 
 		<!-- Lighting -->
 		<Lights />
 
 		<!-- Geometry -->
-		<Cube />
-		<House position={{ x: -20, y: 0, z: -6 }} />
-		<House position={{ x: -8, y: 0, z: -6 }} />
-		<House position={{ x: 8, y: 0, z: -6 }} />
-		<House position={{ x: 16, y: 0, z: -6 }} />
-		<House position={{ x: 32, y: 0, z: -6 }} />
+		<T.Group scale={0.1}>
+			<!-- geometry -->
+			<Cube />
+			<House position={{ x: -20, y: 0, z: -6 }} />
+			<House position={{ x: -8, y: 0, z: -6 }} />
+			<House position={{ x: 8, y: 0, z: -6 }} />
+			<House position={{ x: 16, y: 0, z: -6 }} />
+			<House position={{ x: 32, y: 0, z: -6 }} />
+			<T.Group position.x={$positionSalesman}>
+				<Salesman />
+			</T.Group>
 
-		<T.Group position.x={$positionSalesman}>
-			<Salesman />
+			<T.Group position.x={$positionCar}>
+				<Car />
+			</T.Group>
+
+			<TreeSquare variant="l1" position={{ x: 2, y: 0, z: -7 }} />
+			<TreeSquare variant="s1" position={{ x: -15, y: 0, z: -10 }} />
+			<TreeSquare variant="s1" position={{ x: -4, y: 0, z: -4 }} />
+			<TreeSquare variant="s2" position={{ x: 7, y: 0, z: -9 }} />
+			<TreeSquare variant="l1" position={{ x: 27, y: 0, z: -8 }} />
+			<TreeSquare variant="s2" position={{ x: 24, y: 0, z: -5 }} />
+
+			<BushSquare variant="l1" position={{ x: 4, y: 0, z: 7 }} />
+			<BushSquare variant="l1" position={{ x: -17, y: 0, z: -4 }} />
+			<BushSquare variant="s1" position={{ x: 3, y: 0, z: -4 }} />
+			<BushSquare variant="s1" position={{ x: -7, y: 0, z: -4 }} />
+			<BushSquare variant="s2" position={{ x: 8, y: 0, z: -4 }} />
+
+			<Street />
 		</T.Group>
-
-		<T.Group position.x={$positionCar}>
-			<Car />
-		</T.Group>
-
-		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: -7 }} />
-		<TreeSquare variant="s1" position={{ x: -15, y: 0, z: -10 }} />
-		<TreeSquare variant="s1" position={{ x: -4, y: 0, z: -4 }} />
-		<TreeSquare variant="s2" position={{ x: 7, y: 0, z: -9 }} />
-		<TreeSquare variant="l1" position={{ x: 27, y: 0, z: -8 }} />
-		<TreeSquare variant="s2" position={{ x: 24, y: 0, z: -5 }} />
-
-		<BushSquare variant="l1" position={{ x: 4, y: 0, z: 7 }} />
-		<BushSquare variant="l1" position={{ x: -17, y: 0, z: -4 }} />
-		<BushSquare variant="s1" position={{ x: 3, y: 0, z: -4 }} />
-		<BushSquare variant="s1" position={{ x: -7, y: 0, z: -4 }} />
-		<BushSquare variant="s2" position={{ x: 8, y: 0, z: -4 }} />
-
-		<Street />
 		<!-- Utils -->
 		<!-- <Helpers /> -->
 		<Background color={'#739368'} />

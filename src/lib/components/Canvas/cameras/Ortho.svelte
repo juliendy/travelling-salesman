@@ -5,16 +5,16 @@
 
 	const ortho = {
 		makeDefault: true,
-		position: [100, 100, 100],
-		zoom: 30
-		// near: 0.1
-		// far: 100000
+		position: [10, 10, 10],
+		zoom: 300,
+		near: 1,
+		far: 2000
 	};
 	const orbit = {
 		enableDamping: true,
 		maxPolarAngle: degToRad(80),
 		// maxAzimuthAngle: degToRad(85),
-		enableZoom: true
+		// enableZoom: true,
 		// target: { x: 0, y: 0, z: 0 }
 		// autoRotate: true,
 		// autoRotateSpeed: 0.2

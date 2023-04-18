@@ -21,7 +21,7 @@ export const houses = readable([
 			{ answer: 'Toilet paper', icon: '🧻', amount: 10 }
 		],
 		salesManPosition: -8,
-		cameraPosition: -8
+		cameraPosition: -0.5,
 	},
 	{
 		id: '02',
@@ -31,7 +31,7 @@ export const houses = readable([
 			{ answer: 'Insurance', icon: '📜', amount: 30 }
 		],
 		salesManPosition: 8,
-		cameraPosition: 8
+		cameraPosition: 1,
 	},
 	{
 		id: '03',
@@ -41,7 +41,7 @@ export const houses = readable([
 			{ answer: 'Batman', icon: '🦇', amount: 5 }
 		],
 		salesManPosition: 16,
-		cameraPosition: 16
+		cameraPosition: 2,
 	},
 	{
 		id: '04',
@@ -51,6 +51,6 @@ export const houses = readable([
 			{ answer: 'Playboy magazines', icon: '🍆', amount: 18 }
 		],
 		salesManPosition: 32,
-		cameraPosition: 32
+		cameraPosition: 3,
 	}
 ]);

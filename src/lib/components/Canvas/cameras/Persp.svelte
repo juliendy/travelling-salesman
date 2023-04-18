@@ -3,8 +3,8 @@
 	import { degToRad } from 'three/src/math/MathUtils';
 	const persp = {
 		makeDefault: true,
-		position: [30, 30, 30],
-		fov: 55
+		position: [1, 1, 3],
+		fov: 40
 	};
 	const orbit = {
 		maxPolarAngle: degToRad(80),
